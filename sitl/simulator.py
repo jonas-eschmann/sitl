@@ -52,7 +52,7 @@ class L2F(Simulator):
             self.state.angular_velocity[:] = 0
         state_action_message = l2f.set_state_action_message(self.device, self.env, self.params, self.ui, self.state, action)
         await self.websocket.send(state_action_message)
-        print(f"RPMs: {rpms} dt: {np.mean(self.simulation_dts):.4f} s, action: {action[0].tolist()}")
+        # print(f"RPMs: {rpms} dt: {np.mean(self.simulation_dts):.4f} s, action: {action[0].tolist()}")
         return self.state.position, self.state.orientation, self.state.linear_velocity, self.state.angular_velocity, accelerometer, 101325
 
     async def run(self):
