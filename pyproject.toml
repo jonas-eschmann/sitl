@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sitl"
+version = "0.0.1"
+description = "A SITL for Betaflight"
+readme = "README.md"
+authors = [{name = "Jonas Eschmann", email = "jonas.eschmann@gmail.com"}]
+license = {text = "MIT"}
+dependencies = [
+  "betaflight"
+]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["sitl"]
