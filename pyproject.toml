@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sitl"
-version = "0.0.3"
+version = "0.0.5"
 description = "A SITL for Betaflight"
 readme = "README.md"
 authors = [{name = "Jonas Eschmann", email = "jonas.eschmann@gmail.com"}]
