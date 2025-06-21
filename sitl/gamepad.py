@@ -58,3 +58,7 @@ def main():
         for i, button in enumerate(buttons):
             if button:
                 print(f"Button {i} pressed")
+
+
+if __name__ == "__main__":
+    main()

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sitl"
-version = "0.0.2"
+version = "0.0.3"
 description = "A SITL for Betaflight"
 readme = "README.md"
 authors = [{name = "Jonas Eschmann", email = "jonas.eschmann@gmail.com"}]
@@ -27,3 +27,5 @@ packages = ["sitl"]
 [project.scripts]
 sitl = "sitl.main:sync_main"
 sitl-websockify = "sitl.websockify_proxy:main"
+sitl-gamepad = "sitl.gamepad:main"
+

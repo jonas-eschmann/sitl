@@ -2,10 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger: Module",
+            "name": "sitl",
             "type": "debugpy",
             "request": "launch",
             "module": "sitl.main",
+            "args": ["gamepad_mapping.json"]
+        },
+        {
+            "name": "gamepad",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "sitl.gamepad",
             "args": ["gamepad_mapping.json"]
         }
     ]
